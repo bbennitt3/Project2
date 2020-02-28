@@ -8,3 +8,30 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /* Using a Perfect Fourth modular scale:
    https://www.modularscale.com/?18&px&1.25 */
+
+.titlebox{
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-rows: 33vh 34vh 33vh; /*added up to 100*/
+  background-image: url(skyline.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+  .splashtitle{
+    grid-column: 2;
+    grid-row: 2;
+    border: solid;
+    border-width: thick;
+    border-color: #FFFFFF;
+    padding: 5%;
+    letter-spacing:0.20em;
+    word-spacing:0.25em;
+    color:#FFFFFF;
+    font-size: 6em;
+    text-align: center;
+    font-weight: 100;
+    align-self: center;
+  }
