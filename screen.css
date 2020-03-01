@@ -9,7 +9,22 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /* Using a Perfect Fourth modular scale:
    https://www.modularscale.com/?18&px&1.25 */
 
-.titlebox{
+html {
+ background-color: #90CCF4;    /*blue */
+ font-family: 'Roboto', Arial, sans-serif;
+ font-size: 1.125em; /* 18px / 16px = result */
+ line-height: 1.25em; /* 22.5px / 18px = 1.25em */
+ padding: 1.5625em; /* 28.125px / 18px = 1.5625em */
+ padding-bottom: 3.8147em; /* 68.665px / 18px = 3.8147em */
+ text-rendering: optimizeLegibility; /* used as described in HDWWPT */
+ -webkit-text-size-adjust: 100%;
+ -moz-text-size-adjust: 100%;
+ -ms-text-size-adjust: 100%;
+ text-size-adjust: 100%;
+}
+
+
+#cover-page{
   display: grid;
   grid-template-columns: 2fr 3fr 2fr;
   grid-template-rows: 33vh 34vh 33vh; /*added up to 100*/
@@ -20,18 +35,31 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   background-size: cover;
   }
 
-  .splashtitle{
-    grid-column: 2;
-    grid-row: 2;
-    border: solid;
-    border-width: thick;
-    border-color: #FFFFFF;
-    padding: 5%;
-    letter-spacing:0.20em;
-    word-spacing:0.25em;
-    color:#FFFFFF;
-    font-size: 6em;
-    text-align: center;
-    font-weight: 100;
-    align-self: center;
+#intro-header{
+  grid-column: 2;
+  grid-row: 2;
+  border: solid;
+  border-width: thick;
+  border-color: #FFFFFF;
+  padding: 5%;
+  letter-spacing:0.20em;
+  word-spacing:0.25em;
+  color:#FFFFFF;
+  font-size: 6em;
+  text-align: center;
+  font-weight: 100;
+  align-self: center;
   }
+
+
+.links{
+  font-size: 1.25em; /* 22.5px / 18px = 1.25em */
+  text-align: center;
+  line-height: 1.25em; /* 22.5px / 18px = 1.25em */
+}
+
+ul{
+  display: inline-block;
+  list-style-type: disc;
+  text-align: left;
+}
