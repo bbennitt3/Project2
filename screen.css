@@ -26,10 +26,7 @@ h1{
   font-family: 'Merriweather', Arial, sans-serif;
   font-weight: bold;
   text-align: center;
-}
-
-h1 {
-  line-height: 1em; /* 35.156px / 35.156px = 1em */
+  line-height: 1em;
 }
 
 p {
@@ -111,8 +108,12 @@ ul{
     margin-top: 10vh;
     margin-bottom: 10vh;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    flex-wrap: nowrap;
+    /*display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: .3em;*/
   }
 
   .intro-content{
@@ -126,11 +127,13 @@ ul{
 
   .interests{
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "career hobbies education";
     grid-column-gap: 5vw;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-areas:
+      "career"
+      "hobbies"
+      "education";
+    grid-row-gap: 5vw;
     margin-left: 7.5vw;
     margin-right: 7.5vw;
   }
@@ -149,4 +152,16 @@ ul{
   .info{
     padding: 1em;
     text-align: center;
+  }
+
+  @media screen and (min-width: 800px){
+    .intro{
+      flex-wrap: nowrap;
+    }
+    .interests{
+      grid-template-columns: 2fr 2fr 2fr;
+      grid-template-rows: auto;
+      grid-column-gap: 5vw;
+      grid-row-gap: 0;
+    }
   }
