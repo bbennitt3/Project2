@@ -15,7 +15,6 @@ html {
  font-size: 1.125em; /* 18px / 16px = result */
  line-height: 1.25em; /* 22.5px / 18px = 1.25em */
  padding: 1.5625em; /* 28.125px / 18px = 1.5625em */
- padding-bottom: 3.8147em; /* 68.665px / 18px = 3.8147em */
  text-rendering: optimizeLegibility; /* used as described in HDWWPT */
  -webkit-text-size-adjust: 100%;
  -moz-text-size-adjust: 100%;
@@ -23,22 +22,14 @@ html {
  text-size-adjust: 100%;
 }
 
-h1,
-h2 {
+h1{
   font-family: 'Merriweather', Arial, sans-serif;
   font-weight: bold;
   text-align: center;
 }
 
-h1{
-  font-size: 1.953em; /* 35.156px / 18px = 1.953em */
+h1 {
   line-height: 1em; /* 35.156px / 35.156px = 1em */
-  /*padding-bottom: .512em; /* 18px / 35.156px = .4096em */
-}
-
-h2{
-  font-size: 1.5625em; /* 28.125px / 18px = 1.5625em */
-  padding-bottom: .262em; /* 7.373 / 28.125px = .262em */
 }
 
 p {
@@ -65,9 +56,6 @@ img {
   left: -10000px;
 }
 
-
-
-
 .links{
   font-size: 1.25em; /* 22.5px / 18px = 1.25em */
   text-align: center;
@@ -88,17 +76,6 @@ ul{
   margin-left: 7.5vw;
   margin-right: 7.5vw;
   }
-  /*display: flex;
-  flex-direction: row*/
-  }
-
-.navy-logo{
-  display: block;
-  max-width: auto;
-  padding: 1.25em; /* 22.5px / 18px = 1.25em */
-  margin-top: 1em; /* 18px / 18px = 1em */
-  margin-bottom: 1em; /* 18px / 18px = 1em */
-}
 
 .navy-logo figcaption{
   padding-top: 0.64em; /* 11.52px / 18px = 0.64em */
@@ -131,8 +108,8 @@ ul{
     display: flex;
     margin-right: 5vw;
     margin-left: 5vw;
-    margin-top: 15vh;
-    margin-bottom: 15vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     flex-direction: row;
     justify-content: center;
     flex-wrap: nowrap;
@@ -144,15 +121,8 @@ ul{
     min-width: 40vw;
     box-sizing: border-box;
     padding: 3vw;
+    margin-top: 1em
   }
-
-  /*.pro-picture{
-    flex: 1 0 auto;
-    box-sizing: border-box;
-    max-height: 90vh;
-    min-height: 30vh;
-    padding: 5vw;
-  }*/
 
   .interests{
     display: grid;
@@ -165,6 +135,10 @@ ul{
     margin-right: 7.5vw;
   }
 
+  .interests p{
+    padding: 1em
+  }
+
   /*panel properties*/
   .box{
     background: #ffffff;
@@ -173,5 +147,6 @@ ul{
   }
 
   .info{
+    padding: 1em;
     text-align: center;
   }
