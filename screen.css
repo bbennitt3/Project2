@@ -10,7 +10,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
    https://www.modularscale.com/?18&px&1.25 */
 
 html {
- background-color: #90CCF4;    /*blue */
+ background-color: #D3D3D3;    /*light gray */
  font-family: 'Roboto', Arial, sans-serif;
  font-size: 1.125em; /* 18px / 16px = result */
  line-height: 1.25em; /* 22.5px / 18px = 1.25em */
@@ -23,33 +23,50 @@ html {
  text-size-adjust: 100%;
 }
 
-
-#cover-page{
-  display: grid;
-  grid-template-columns: 2fr 3fr 2fr;
-  grid-template-rows: 33vh 34vh 33vh; /*added up to 100*/
-  background-image: url(skyline.jpg);
-  min-height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  }
-
-#intro-header{
-  grid-column: 2;
-  grid-row: 2;
-  border: solid;
-  border-width: thick;
-  border-color: #FFFFFF;
-  padding: 5%;
-  letter-spacing:0.20em;
-  word-spacing:0.25em;
-  color:#FFFFFF;
-  font-size: 6em;
+h1,
+h2 {
+  font-family: 'Merriweather', Arial, sans-serif;
+  font-weight: bold;
   text-align: center;
-  font-weight: 100;
-  align-self: center;
-  }
+}
+
+h1{
+  font-size: 1.953em; /* 35.156px / 18px = 1.953em */
+  line-height: 1em; /* 35.156px / 35.156px = 1em */
+  /*padding-bottom: .512em; /* 18px / 35.156px = .4096em */
+}
+
+h2{
+  font-size: 1.5625em; /* 28.125px / 18px = 1.5625em */
+  padding-bottom: .262em; /* 7.373 / 28.125px = .262em */
+}
+
+p {
+  padding-bottom: 1.25em; /* 22.5px / 18px = 1.25em */
+}
+
+/* Responsive media */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.pro-picture, .navy-photo{
+  background: #A9A9A9; /* darkgray */
+  padding: 1.25em; /* 22.5px / 18px = 1.25em */
+  margin-top: 1em; /* 18px / 18px = 1em */
+  margin-bottom: 1em; /* 18px / 18px = 1em */
+}
+
+.pro-picture figcaption, .navy-photo figcaption{
+  padding-top: 0.64em; /* 11.52px / 18px = 0.64em */
+  /* Use to not show the caption */
+  position: absolute;
+  left: -10000px;
+}
+
+
 
 
 .links{
@@ -63,3 +80,85 @@ ul{
   list-style-type: disc;
   text-align: left;
 }
+
+.cover-page{
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  justify-content: center;
+  }
+  /*display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-rows: 33vh 34vh 33vh; /*added up to 100
+  background-image: url(navy-logo.jpg);
+  max-width: 100vh;
+  max-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  }
+
+.intro-header{
+  border: solid;
+  border-width: thick;
+  border-color: #FFFFFF;
+  padding: 5%;
+  letter-spacing:0.20em;
+  word-spacing:0.25em;
+  color:#FFFFFF;
+  font-size: 6em;
+  text-align: center;
+  font-weight: 100;
+  }
+
+  .intro{
+    max-width: 85vw;
+    margin: auto;
+    background-color: #fcfcfc;
+    border-radius: 1vw;
+  }
+
+  .intro{
+    display: flex;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .intro-content{
+    flex: 1 1 auto ;
+    max-width: 50vw;
+    min-width: 40vw;
+    box-sizing: border-box;
+    padding: 3vw;
+  }
+
+  /*.pro-picture{
+    flex: 1 0 auto;
+    box-sizing: border-box;
+    max-height: 90vh;
+    min-height: 30vh;
+    padding: 5vw;
+  }*/
+
+  .interests{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "career hobbies education";
+    grid-column-gap: 5vw;
+    margin-left: 7.5vw;
+    margin-right: 7.5vw;
+  }
+
+  /*panel properties*/
+  .box{
+    background: #ffffff;
+    text-align: center;
+    border-radius: 1vw;
+  }
