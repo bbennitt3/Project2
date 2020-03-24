@@ -12,8 +12,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 html {
  background-color: #D3D3D3;    /*light gray */
  font-family: 'Roboto', Arial, sans-serif;
- font-size: 1.125em; /* 18px / 16px = result */
- line-height: 1.25em; /* 22.5px / 18px = 1.25em */
+ font-size: 1.125em; /* 1p8x / 16px = result */
+ line-height: 1.25em; /* 22.5px / 16px = 1.25em */
  padding: 1.5625em; /* 28.125px / 18px = 1.5625em */
  text-rendering: optimizeLegibility; /* used as described in HDWWPT */
  -webkit-text-size-adjust: 100%;
@@ -70,8 +70,8 @@ ul{
   grid-template-columns: 3fr 1fr;
   grid-gap: 10px;
   justify-content: center;
-  margin-left: 7.5vw;
-  margin-right: 7.5vw;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
   padding-bottom: 1em;
   }
 
@@ -86,7 +86,7 @@ ul{
   border: solid;
   border-width: thick;
   border-color: #000000;
-  padding: 1%;
+  padding: .5%;
   letter-spacing:0.20em;
   word-spacing:0.25em;
   color:#000000;
@@ -106,11 +106,12 @@ ul{
     display: flex;
     margin-right: 10vw;
     margin-left: 10vw;
-    margin-top: 10vh;
+    margin-top: 5vh;
     margin-bottom: 10vh;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-self: center;
     /*display: grid;
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr;
@@ -141,7 +142,7 @@ ul{
 
 
   #interests p{
-    padding: 1em
+    padding: 1em;
   }
 
   /*panel properties*/
@@ -152,7 +153,8 @@ ul{
   }
 
   .info{
-    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     text-align: center;
   }
 
@@ -178,6 +180,14 @@ ul{
       font-size: 1.5625em;
     }
 }
+
+@media screen and (min-width: 650px){
+  .cover-page{
+      margin-left: 7.5vw;
+      margin-right: 7.5vw;
+      padding-bottom: 1em;
+  }
+
   @media screen and (min-width: 800px){
     .intro{
       flex-wrap: nowrap;
@@ -192,3 +202,8 @@ ul{
       grid-row-gap: 0;
     }
   }
+
+  @media screen and (min-width: 1200px){
+    .intro{
+      margin-top: 10vh
+    }
