@@ -118,7 +118,7 @@ ul{
 
   .intro-content{
     flex: 1 1 auto ;
-    max-width: 50vw;
+    max-width: 75vw;
     min-width: 40vw;
     box-sizing: border-box;
     padding: 3vw;
@@ -157,6 +157,9 @@ ul{
   @media screen and (min-width: 800px){
     .intro{
       flex-wrap: nowrap;
+    }
+    .intro-content{
+      max-width: 50vw;
     }
     .interests{
       grid-template-columns: 2fr 2fr 2fr;
