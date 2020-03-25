@@ -72,7 +72,7 @@ ul{
   justify-content: center;
   margin-left: 2.5vw;
   margin-right: 2.5vw;
-  padding-bottom: 1em;
+  padding-bottom: .25em;
   }
 
 .navy-logo figcaption{
@@ -189,6 +189,12 @@ ul{
     }
   .pro-picture{
     max-width: 70%;
+  }
+}
+
+@media screen and (min-width: 600px){
+  .cover-page{
+    padding-bottom: 1em;
   }
 }
 
