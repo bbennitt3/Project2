@@ -197,27 +197,18 @@ ul{
     font-size: 8.3vw;
     }
 }
-  /*@media screen and (min-width: 800px){
+  @media screen and (min-width: 875px){
 
-    .intro-content{
-      max-width: 50vw;
-    }
+  #interests{
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: auto;
+    grid-column-gap: 5vw;
+    grid-row-gap: 0;
   }
-
-  @media screen and (min-width: 1200px){
-    .intro{
-      margin-top: 10vh;
-    }
-  }*/
+}
   @media screen and (min-width: 950px){
     h6{
       font-size: 1.25em;
-    }
-    #interests{
-      grid-template-columns: 2fr 2fr 2fr;
-      grid-template-rows: auto;
-      grid-column-gap: 5vw;
-      grid-row-gap: 0;
     }
     .intro{
       flex-wrap: nowrap;
@@ -230,6 +221,7 @@ ul{
       padding: 1.25em; /* 22.5px / 18px = 1.25em */
       margin-top: 1em; /* 18px / 18px = 1em */
       margin-bottom: 1em; /* 18px / 18px = 1em */
+      max-width: 100%;
     }
   }
 
