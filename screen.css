@@ -70,8 +70,8 @@ ul{
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
   justify-content: center;
-  margin-left: 2.5vw;
-  margin-right: 2.5vw;
+  margin-left: .25vw;
+  margin-right: .25vw;
   padding-bottom: .25em;
   }
 
@@ -102,8 +102,8 @@ ul{
 
   .intro{
     display: flex;
-    margin-right: 10vw;
-    margin-left: 10vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
     margin-top: 5vh;
     margin-bottom: 5vh;
     flex-direction: row;
@@ -190,6 +190,10 @@ ul{
   .pro-picture{
     max-width: 70%;
   }
+  .cover-page{
+    margin-left: 1.25vw;
+    margin-right: 1.25vw;
+  }
 }
 
 @media screen and (min-width: 600px){
@@ -203,7 +207,7 @@ ul{
     font-size: 8.3vw;
     }
 }
-  @media screen and (min-width: 875px){
+  /*@media screen and (min-width: 875px){
 
   #interests{
     grid-template-columns: 2fr 2fr 2fr;
@@ -211,13 +215,15 @@ ul{
     grid-column-gap: 5vw;
     grid-row-gap: 0;
   }
-}
+}*/
   @media screen and (min-width: 950px){
     h6{
       font-size: 1.25em;
     }
     .intro{
       flex-wrap: nowrap;
+      margin-right: 10vw;
+      margin-left: 10vw;
     }
     .intro-content{
       max-width: 50vw;
@@ -228,6 +234,12 @@ ul{
       margin-top: 1em; /* 18px / 18px = 1em */
       margin-bottom: 1em; /* 18px / 18px = 1em */
       max-width: 100%;
+    }
+    #interests{
+      grid-template-columns: 2fr 2fr 2fr;
+      grid-template-rows: auto;
+      grid-column-gap: 5vw;
+      grid-row-gap: 0;
     }
   }
 
