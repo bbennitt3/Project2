@@ -67,7 +67,7 @@ ul{
 
 .cover-page{
   display: inline-grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
   justify-content: center;
   margin-left: 2.5vw;
@@ -181,13 +181,6 @@ ul{
     }
 }
 
-@media screen and (min-width: 650px){
-  .cover-page{
-      margin-left: 7.5vw;
-      margin-right: 7.5vw;
-      padding-bottom: 1em;
-  }
-
   @media screen and (min-width: 800px){
     .intro{
       flex-wrap: nowrap;
@@ -205,5 +198,5 @@ ul{
 
   @media screen and (min-width: 1200px){
     .intro{
-      margin-top: 10vh
+      margin-top: 10vh;
     }
