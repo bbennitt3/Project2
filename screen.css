@@ -43,7 +43,7 @@ img {
 .pro-picture{
   padding: 1.25em;  /*22.5px / 18px = 1.25em */
   margin-top: 1em; /* 18px / 18px = 1em */
-  max-width: 60%;
+  max-width: 100%;
 }
 
 .pro-picture figcaption{
@@ -187,6 +187,9 @@ ul{
   .intro-header{
     font-size: 7.5vw;
     }
+  .pro-picture{
+    max-width: 70%;
+  }
 }
 
 @media screen and (min-width: 670px){
