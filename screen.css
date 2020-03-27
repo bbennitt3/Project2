@@ -51,7 +51,25 @@ figcaption{
   left: -10000px;
 }
 
-/* Responsive media */
+.intro{
+  max-width: 85vw;
+  margin: auto;
+  background-color: #fcfcfc;
+  border-radius: 1vw;
+  display: flex;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  /*display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: .3em;*/
+}
 
 .pro-picture{
   padding: 1.25em;  /*22.5px / 18px = 1.25em */
@@ -59,7 +77,13 @@ figcaption{
   max-width: 100%;
 }
 
-p {
+.intro-content{
+  flex: 1 1 auto ;
+  max-width: 75vw;
+  min-width: 40vw;
+  box-sizing: border-box;
+  padding: 3vw;
+  padding-top: 0em;
   padding-bottom: 1.25em; /* 22.5px / 18px = 1.25em */
 }
 
@@ -85,54 +109,22 @@ ul{
   padding-bottom: .25em;
   }*/
 
-  .intro{
-    max-width: 85vw;
-    margin: auto;
-    background-color: #fcfcfc;
-    border-radius: 1vw;
-  }
-
-  .intro{
-    display: flex;
-    margin-right: 5vw;
-    margin-left: 5vw;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-self: center;
-    /*display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr;
-    grid-row-gap: .3em;*/
-  }
-
-  .intro-content{
-    flex: 1 1 auto ;
-    max-width: 75vw;
-    min-width: 40vw;
-    box-sizing: border-box;
-    padding: 3vw;
-    padding-top: 0em;
-  }
-
-  #interests{
-    display: grid;
-    grid-column-gap: 5vw;
-    grid-template-areas:
-      "career-goals"
-      "hobbies"
-      "education";
-    grid-row-gap: 5vw;
-    margin-left: 7.5vw;
-    margin-right: 7.5vw;
-  }
+.interests{
+  display: grid;
+  grid-column-gap: 5vw;
+  grid-template-areas:
+    "career-goals"
+    "hobbies"
+    "education";
+  grid-row-gap: 5vw;
+  margin-left: 7.5vw;
+  margin-right: 7.5vw;
+}
 
 
-  #interests p{
-    padding: 1em;
-  }
+.interests p{
+  padding: 1em;
+}
 
   /*panel properties*/
   #career-goals, #hobbies, #education{
@@ -141,7 +133,7 @@ ul{
     border-radius: 1vw;
   }
 
-  .info{
+  .contact-info{
     padding-top: 1em;
     padding-bottom: 1em;
     text-align: center;
@@ -226,7 +218,7 @@ ul{
       margin-bottom: 1em; /* 18px / 18px = 1em */
       max-width: 100%;
     }
-    #interests{
+    .interests{
       grid-template-columns: 2fr 2fr 2fr;
       grid-template-rows: auto;
       grid-column-gap: 5vw;
