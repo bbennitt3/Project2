@@ -58,31 +58,27 @@ figcaption {
   /*margin-right: 5vw; looks good at bigger sizes
   margin-left: 5vw;*/
   margin-top: .64em; /* 10.24px / 16px = .64em */
-  margin-bottom: 5vh; /*left off here*/
-  flex-direction: row;
+  margin-bottom: 1.5625em; /* 25px / 16px = 1.25em (one line height)*/
   flex-wrap: wrap;
   justify-content: center;
-  align-self: center;
   /*display: grid;
   grid-template-columns: auto;
   grid-template-rows: 1fr 1fr;
   grid-row-gap: .3em;*/
 }
 
+.pro-picture, .intro-content{
+  padding: .8em; /* 12.8px / 16px = .8em */
+}
+
 .pro-picture{
   margin-top: .4096em; /* 6.554px / 16px = .4096em */
   max-width: 100%;
-  padding: 1.25em;  /*22.5px / 18px = 1.25em */
 }
 
 .intro-content{
-  flex: 1 1 auto ;
-  max-width: 75vw;
-  min-width: 40vw;
-  box-sizing: border-box;
-  padding: 3vw;
-  padding-top: 0em;
-  padding-bottom: 1.25em; /* 22.5px / 18px = 1.25em */
+  box-sizing: border-box; /* might be able to delete but leave for now */
+  padding-top: 0em; /* don't need it to be double padded */
 }
 
 /*.cover-page{
@@ -97,26 +93,30 @@ figcaption {
 
 .interests{
   display: grid;
-  grid-column-gap: 5vw;
   grid-template-areas:
     "career-goals"
     "hobbies"
     "education";
-  grid-row-gap: 5vw;
-  margin-left: 7.5vw;
-  margin-right: 7.5vw;
+  grid-row-gap: 5vw; /* grow as the viewport grows */
+  /*margin-left: 7.5vw;
+  margin-right: 7.5vw;*/
 }
 
+h3{
+  
+}
 
 .interests p{
-  padding: 1em;
+  padding: 1em; /* 16px / 16px = 1em */
+  padding-left: .512em; /* 8.192px / 16px = .512em */
+  padding-right: .512em; /* 8.192px / 16px = .512em */
 }
 
   /*panel properties*/
 #career-goals, #hobbies, #education{
   background: #ffffff;
-  text-align: center;
   border-radius: 1vw;
+  text-align: center;
 }
 
 .contact-info{
