@@ -149,18 +149,35 @@ h4{
 
 @media screen and (min-width: 250px){
   .name{
-    font-size: 1.953em;
-  }
-}
-@media screen and (min-width: 355px){
-  .name{
-    font-size: 7vw;
+    font-size: 1.953em; /* 31.25px / 16px = 1.953em */
   }
 }
 
-@media screen and (min-width: 390px){
+@media screen and (min-width: 300px){
+  .name{
+    font-size: 2.441em; /* 39.063px / 16px = 2.441em */
+    margin-bottom: .262em; /* 4.194px / 16px = .262em */
+  }
+}
+
+@media screen and (min-width: 325px){
+  .name{
+    font-size: 3.052em;
+  }
+
+  h2{
+    font-size: 1.953em;
+    padding-bottom: 0em;
+  }
+
   h4{
     font-size: 1.5625em;
+  }
+}
+
+@media screen and (min-width: 375px){
+  p{
+    font-size: 1.25em;
   }
 }
 
