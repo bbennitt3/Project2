@@ -23,9 +23,10 @@ html {
   border-width: thick;
   border-color: #000000;
   font-family: 'Merriweather', Arial, sans-serif;
-  font-size: 1.25em; /* 20px / 16px = 1.25em */
+  font-size: 1.5625em; /* 25px / 16px = 1.5625em */
   font-weight: bold;
-  margin-bottom: .512em; /* 8.192 / 16px = .512em */
+  line-height: 1em; /* 25px / 25px = 1em */
+  margin-bottom: .4096em; /* 6.554px / 16px = .4096em */
   padding: .262em; /* 4.194px / 16px = .262em */
   text-align: center;
   text-transform: uppercase;
@@ -51,12 +52,11 @@ figcaption {
   margin-left: 5vw;*/
   margin: 0 auto;
   margin-top: .64em; /* 10.24px / 16px = .64em */
-  margin-bottom: 1.5625em; /* 25px / 16px = 1.25em (one line height)*/
+  margin-bottom: 1.25em; /* 25px / 16px = 1.5625em */
   flex-wrap: wrap;
   justify-content: center;
   min-width: 11.642em; /* 186.265px / 16px = 11.642em */
-  /*max-width: 500px;*/
-  width: 75%;
+  width: 90%;
 }
 
 .pro-picture, .intro-content{
@@ -99,7 +99,7 @@ figcaption {
 }
 
 h2{
-  font-size: 1.953em; /* 31.25px / 16px = 1.953em */
+  font-size: 1.5625em; /* 31.25px / 16px = 1.5625em */
   text-align: center;
 }
 
@@ -147,12 +147,11 @@ h4{
 
 /*Media Queries*/
 
-@media screen and (min-width: 330px){
-  h4{
-    font-size: 1.25em;
+@media screen and (min-width: 250px){
+  .name{
+    font-size: 1.953em;
   }
 }
-
 @media screen and (min-width: 355px){
   .name{
     font-size: 7vw;
