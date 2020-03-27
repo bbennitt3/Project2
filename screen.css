@@ -14,7 +14,8 @@ html {
  font-family: 'Roboto', Arial, sans-serif;
  font-size: 1.125em; /* 1p8x / 16px = result */
  line-height: 1.25em; /* 22.5px / 16px = 1.25em */
- padding: 1.5625em; /* 28.125px / 18px = 1.5625em */
+ padding: .5em; /* 28.125px / 18px = 1.5625em */
+ padding-bottom: 1em;
  text-rendering: optimizeLegibility; /* used as described in HDWWPT */
  -webkit-text-size-adjust: 100%;
  -moz-text-size-adjust: 100%;
