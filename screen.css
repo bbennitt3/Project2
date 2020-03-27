@@ -18,6 +18,10 @@ html {
  padding-bottom: 1em; /* 16x / 16px = 1em */
 }
 
+.cover-page{
+
+}
+
 .name{
   border: solid;
   border-width: thick;
@@ -28,35 +32,35 @@ html {
   font-size: 1.25em; /* 20px / 16px = 1.25em */
   font-weight: bold;
   text-align: center;
-  margin-bottom: .512em; /* 8.192 / 16px */
+  margin-bottom: .512em; /* 8.192 / 16px = .512em */
 }
 
-.cover-page{
+.navsea-logo{
 
 }
-
-p {
-  padding-bottom: 1.25em; /* 22.5px / 18px = 1.25em */
-}
-
-/* Responsive media */
 
 img {
   display: block;
   max-width: 100%;
 }
 
-.pro-picture{
-  padding: 1.25em;  /*22.5px / 18px = 1.25em */
-  margin-top: 1em; /* 18px / 18px = 1em */
-  max-width: 100%;
-}
-
-.pro-picture figcaption{
+figcaption{
   padding-top: 0.64em; /* 11.52px / 18px = 0.64em */
   /* Use to not show the caption */
   position: absolute;
   left: -10000px;
+}
+
+/* Responsive media */
+
+.pro-picture{
+  padding: 1.25em;  /*22.5px / 18px = 1.25em */
+  margin-top: .4096em; /* 6.554px / 16px = .4096em */
+  max-width: 100%;
+}
+
+p {
+  padding-bottom: 1.25em; /* 22.5px / 18px = 1.25em */
 }
 
 .links{
@@ -80,13 +84,6 @@ ul{
   margin-right: .25vw;
   padding-bottom: .25em;
   }*/
-
-.navy-logo figcaption{
-  padding-top: 0.64em; /* 11.52px / 18px = 0.64em */
-  /* Use to not show the caption */
-  position: absolute;
-  left: -10000px;
-}
 
   .intro{
     max-width: 85vw;
