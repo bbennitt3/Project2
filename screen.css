@@ -58,7 +58,7 @@ figcaption {
   /*margin-right: 5vw; looks good at bigger sizes
   margin-left: 5vw;*/
   margin-top: .64em; /* 10.24px / 16px = .64em */
-  margin-bottom: 5vh;
+  margin-bottom: 5vh; /*left off here*/
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -70,9 +70,9 @@ figcaption {
 }
 
 .pro-picture{
-
   margin-top: .4096em; /* 6.554px / 16px = .4096em */
   max-width: 100%;
+  padding: 1.25em;  /*22.5px / 18px = 1.25em */
 }
 
 .intro-content{
@@ -83,10 +83,6 @@ figcaption {
   padding: 3vw;
   padding-top: 0em;
   padding-bottom: 1.25em; /* 22.5px / 18px = 1.25em */
-}
-
-.pro-picture, .intro-content{
-  padding: 1.25em;  /*22.5px / 18px = 1.25em */
 }
 
 /*.cover-page{
