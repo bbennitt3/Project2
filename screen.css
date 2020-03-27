@@ -18,11 +18,26 @@ html {
  padding-bottom: 1em; /* 16x / 16px = 1em */
 }
 
-h1{
+.name{
+  border: solid;
+  border-width: thick;
+  border-color: #000000;
+  padding: .262em; /* 4.194px / 16px = .262em */
+  color:#000000;
+  font-size: 6vw;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 100;
   font-family: 'Merriweather', Arial, sans-serif;
+  font-size: 1.25em;
   font-weight: bold;
   text-align: center;
   line-height: 1em;
+  margin-bottom: .512em; /* 1 line height */
+}
+
+.cover-page{
+
 }
 
 p {
@@ -61,7 +76,7 @@ ul{
   text-align: left;
 }
 
-.cover-page{
+/*.cover-page{
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
@@ -69,7 +84,7 @@ ul{
   margin-left: .25vw;
   margin-right: .25vw;
   padding-bottom: .25em;
-  }
+  }*/
 
 .navy-logo figcaption{
   padding-top: 0.64em; /* 11.52px / 18px = 0.64em */
@@ -77,18 +92,6 @@ ul{
   position: absolute;
   left: -10000px;
 }
-
-.intro-header{
-  border: solid;
-  border-width: thick;
-  border-color: #000000;
-  padding: .5%;
-  color:#000000;
-  font-size: 6vw;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 100;
-  }
 
   .intro{
     max-width: 85vw;
@@ -170,7 +173,7 @@ ul{
     }
 }
   @media screen and (min-width: 355px){
-    .intro-header{
+    .name{
       font-size: 7vw;
     }
   }
@@ -180,7 +183,7 @@ ul{
     }
 }
 @media screen and (min-width: 440px){
-  .intro-header{
+  .name{
     font-size: 7.5vw;
     }
   .pro-picture{
@@ -199,7 +202,7 @@ ul{
 }
 
 @media screen and (min-width: 670px){
-  .intro-header{
+  .name{
     font-size: 8.3vw;
     }
 }
@@ -246,7 +249,7 @@ ul{
     }
 
     @media screen and (min-width: 1250px){
-      .intro-header{
+      .name{
         font-size: 8.5vw;
       }
     }
