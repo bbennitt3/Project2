@@ -23,17 +23,12 @@ html {
   border-width: thick;
   border-color: #000000;
   padding: .262em; /* 4.194px / 16px = .262em */
-  color:#000000;
-  font-size: 6vw;
-  text-align: center;
   text-transform: uppercase;
-  font-weight: 100;
   font-family: 'Merriweather', Arial, sans-serif;
-  font-size: 1.25em;
+  font-size: 1.25em; /* 20px / 16px = 1.25em */
   font-weight: bold;
   text-align: center;
-  line-height: 1em;
-  margin-bottom: .512em; /* 1 line height */
+  margin-bottom: .512em; /* 8.192 / 16px */
 }
 
 .cover-page{
