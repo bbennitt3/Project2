@@ -16,11 +16,6 @@ html {
  line-height: 1.25em; /* 20px / 16px = 1.25em */
  padding: .4096em; /* 6.554px / 16px = .4096em */
  padding-bottom: 1em; /* 16x / 16px = 1em */
- text-rendering: optimizeLegibility; /* used as described in HDWWPT */
- -webkit-text-size-adjust: 100%;
- -moz-text-size-adjust: 100%;
- -ms-text-size-adjust: 100%;
- text-size-adjust: 100%;
 }
 
 h1{
