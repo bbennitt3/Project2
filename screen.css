@@ -18,10 +18,6 @@ html {
  padding-bottom: 1em; /* 16x / 16px = 1em */
 }
 
-.cover-page{
-
-}
-
 .name{
   border: solid;
   border-width: thick;
@@ -33,10 +29,6 @@ html {
   padding: .262em; /* 4.194px / 16px = .262em */
   text-align: center;
   text-transform: uppercase;
-}
-
-.navsea-logo{
-
 }
 
 img {
@@ -53,18 +45,18 @@ figcaption {
 
 .intro {
   background-color: #fcfcfc;
-  border-radius: 1vw; /* Designed to have minimal roundness at small scale */
+  border-radius: 1vw;
   display: flex;
   /*margin-right: 5vw; looks good at bigger sizes
   margin-left: 5vw;*/
+  margin: 0 auto;
   margin-top: .64em; /* 10.24px / 16px = .64em */
   margin-bottom: 1.5625em; /* 25px / 16px = 1.25em (one line height)*/
   flex-wrap: wrap;
   justify-content: center;
-  /*display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 1fr 1fr;
-  grid-row-gap: .3em;*/
+  min-width: 11.642em; /* 186.265px / 16px = 11.642em */
+  /*max-width: 500px;*/
+  width: 75%;
 }
 
 .pro-picture, .intro-content{
@@ -97,17 +89,36 @@ figcaption {
     "career-goals"
     "hobbies"
     "education";
-  grid-row-gap: 5vw; /* grow as the viewport grows */
-  /*margin-left: 7.5vw;
-  margin-right: 7.5vw;*/
+  grid-row-gap: 4vw; /* grow as the viewport grows */
+  justify-content: center;
+  margin: 0 auto;
+  min-width: 11.642em; /* 186.265px / 16px = 11.642em */
+  /*max-width: 500px;*/
+  width: 75%;
+
+}
+
+h2{
+  font-size: 1.953em; /* 31.25px / 16px = 1.953em */
+  text-align: center;
+}
+
+h2, h4{
+  font-family: 'Merriweather', Arial, sans-serif;
+  font-weight: bold;
+  padding-bottom: .512em; /* 8.192px / 16px = .512em */
 }
 
 h3{
-  
+  font-family: 'Merriweather', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.25em; /* 20px / 16px = 1.25em */
+  padding-top: .512em; /* 8.192px / 16px = .512em */
+  text-align: center;
 }
 
 .interests p{
-  padding: 1em; /* 16px / 16px = 1em */
+  padding: .64em; /* 10.24px / 16px = .64em */
   padding-left: .512em; /* 8.192px / 16px = .512em */
   padding-right: .512em; /* 8.192px / 16px = .512em */
 }
@@ -116,19 +127,12 @@ h3{
 #career-goals, #hobbies, #education{
   background: #ffffff;
   border-radius: 1vw;
-  text-align: center;
 }
 
 .contact-info{
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 1em; /* 16x / 16px = result */
+  padding-bottom: 1em; /* 16x / 16px = result */
   text-align: center;
-}
-
-.links{
-  font-size: 1.25em; /* 22.5px / 18px = 1.25em */
-  text-align: center;
-  line-height: 1.25em; /* 22.5px / 18px = 1.25em */
 }
 
 ul{
@@ -137,16 +141,8 @@ ul{
   text-align: left;
 }
 
-h2, h4{
-  font-family: 'Merriweather', Arial, sans-serif;
-  font-weight: bold;
-  font-size: 1.125em;
-  padding-bottom: .5em;
-}
-
-h2{
-  text-align: center;
-  font-size: 2em;
+h4{
+  font-size: 1.25em; /* 20px / 16px = 1.25em */
 }
 
 /*Media Queries*/
@@ -173,9 +169,9 @@ h2{
   .name{
     font-size: 7.5vw;
     }
-  .pro-picture{
+  /*.pro-picture{
     max-width: 70%;
-  }
+  }*/
   .cover-page{
     margin-left: 1.25vw;
     margin-right: 1.25vw;
