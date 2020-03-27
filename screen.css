@@ -130,7 +130,6 @@ ul{
   #interests{
     display: grid;
     grid-column-gap: 5vw;
-    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
       "career-goals"
       "hobbies"
