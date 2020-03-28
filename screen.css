@@ -73,16 +73,6 @@ figcaption {
   padding-top: 0em; /* don't need it to be double padded */
 }
 
-/*.cover-page{
-  display: inline-grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-  justify-content: center;
-  margin-left: .25vw;
-  margin-right: .25vw;
-  padding-bottom: .25em;
-  }*/
-
 .interests{
   display: grid;
   grid-template-areas:
@@ -176,21 +166,51 @@ h4{
 }
 
 @media screen and (min-width: 375px){
-  p{
-    font-size: 1.25em;
+  p, .list{
+    font-size: 1.125em;
+    line-height: 1.25em;
   }
 }
 
-@media screen and (min-width: 440px){
+@media screen and (min-width: 425px){
   .name{
-    font-size: 7.5vw;
+    font-size: 3.815em;
     }
-  /*.pro-picture{
-    max-width: 70%;
-  }*/
+
   .cover-page{
     margin-left: 1.25vw;
     margin-right: 1.25vw;
+  }
+}
+
+@media screen and (min-width: 475px){
+  .pro-picture, .intro-content{
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .name{
+    font-size: 4.768em; /* 76.294px / 16px = 4.768em */
+    margin-bottom: .2097em; /* 3.3552px / 16px = .2097em */
+  }
+}
+
+/*good until query below*/
+
+@media screen and (min-width: 550px){
+  .cover-page{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+    margin-left: .25vw;
+    margin-right: .25vw;
+    padding-bottom: .25em;
+  }
+  .name{
+    font-size: 2.5em;
+
+    padding: .4096em; /* 4.194px / 16px = .262em */
   }
 }
 
