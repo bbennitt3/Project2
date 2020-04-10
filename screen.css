@@ -16,6 +16,7 @@ html {
  line-height: 1.25em; /* 20px / 16px = 1.25em */
  padding: .4096em; /* 6.554px / 16px = .4096em */
  padding-bottom: 1em; /* 16x / 16px = 1em */
+ max-width: 1400px;
 }
 
 .name{
@@ -263,5 +264,17 @@ h4{
   }
   .cover-page{
     padding-top: .512em; /* 8.192px / 16px */
+  }
+}
+
+@media screen and (min-width: 1400px){
+  html{
+    margin: 0 auto;
+  }
+  .name{
+    font-size: 115px;
+  }
+  .intro-content{
+    max-width: 690px;
   }
 }
