@@ -238,7 +238,7 @@ h4{
   .pro-picture{
     margin-top: 1em; /* 18px / 18px = 1em */
     margin-bottom: 1em; /* 18px / 18px = 1em */
-    max-width: 100%;
+    max-width: 30%;
   }
 
   .interests{
